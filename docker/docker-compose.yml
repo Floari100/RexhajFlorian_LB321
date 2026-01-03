@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  ApiGateway:
+    image: nginx:alpine-slim
+    container_name: ZuckererApiGateway
+    restart: always
+    volumes:
+      - ./ApiGateway/html:/usr/share/nginx/html:ro
+      - ./ApiGateway/conf/99-apigateway.conf:/etc/nginx/conf.d/99-apigateway.conf:ro
+    ports:
+      - "8000:80"
