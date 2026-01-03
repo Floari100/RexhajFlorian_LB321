@@ -23,10 +23,36 @@ services:
 
   ArticleService:
     image: zuckerer-articleservice
-    build: ../src/ZuckererWarehouse/ArticleService
+    build:
+      context: ../src/ZuckererWarehouse
+      dockerfile: ArticleService/Dockerfile
     container_name: zuckerer-articleservice
     restart: always
     environment:
       - ASPNETCORE_URLS=http://0.0.0.0:8080
       - ASPNETCORE_ENVIRONMENT=Development
+      - RABBITMQ_HOST=MessageQueue
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USER=guest
+      - RABBITMQ_PASS=guest
+    depends_on:
+      - MessageQueue
+
+
+  EventLogService:
+    image: zuckerer-eventlogservice
+    build:
+      context: ../src/ZuckererWarehouse
+      dockerfile: EventLogService/Dockerfile
+    container_name: zuckerer-eventlogservice
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:8080
+      - RABBITMQ_HOST=MessageQueue
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USER=guest
+      - RABBITMQ_PASS=guest
+    depends_on:
+      - MessageQueue
 

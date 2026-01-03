@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArticleService", "ArticleSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedContracts", "SharedContracts\SharedContracts.csproj", "{073489D4-2A84-4E25-8615-16A1BBC0E2EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventLogService", "EventLogService\EventLogService.csproj", "{25706B35-CC82-4263-A941-53B80EA3E1BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{073489D4-2A84-4E25-8615-16A1BBC0E2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{073489D4-2A84-4E25-8615-16A1BBC0E2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{073489D4-2A84-4E25-8615-16A1BBC0E2EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25706B35-CC82-4263-A941-53B80EA3E1BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25706B35-CC82-4263-A941-53B80EA3E1BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25706B35-CC82-4263-A941-53B80EA3E1BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25706B35-CC82-4263-A941-53B80EA3E1BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

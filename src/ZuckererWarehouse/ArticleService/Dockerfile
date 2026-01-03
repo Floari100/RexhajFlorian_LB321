@@ -4,12 +4,19 @@ EXPOSE 8080
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
+
+# csproj zuerst (Cache)
+COPY ArticleService/ArticleService.csproj ArticleService/
+COPY SharedContracts/SharedContracts.csproj SharedContracts/
+
+RUN dotnet restore ArticleService/ArticleService.csproj
+
+# Rest kopieren
 COPY . .
-RUN dotnet restore "ArticleService.csproj"
-RUN dotnet publish "ArticleService.csproj" -c Release -o /app/publish
+
+RUN dotnet publish ArticleService/ArticleService.csproj -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/publish .
-ENV ASPNETCORE_URLS=http://0.0.0.0:8080
 ENTRYPOINT ["dotnet", "ArticleService.dll"]
