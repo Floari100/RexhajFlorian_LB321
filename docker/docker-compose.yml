@@ -21,3 +21,12 @@ services:
       - "8001:15672"
       - "5672:5672"
 
+  ArticleService:
+    image: zuckerer-articleservice
+    build: ../src/ZuckererWarehouse/ArticleService
+    container_name: zuckerer-articleservice
+    restart: always
+    environment:
+      - ASPNETCORE_URLS=http://0.0.0.0:8080
+      - ASPNETCORE_ENVIRONMENT=Development
+
