@@ -1,0 +1,12 @@
+/Users/florian/M321-Zuckerer/src/ZuckererWarehouse/SharedContracts/bin/Debug/net8.0/SharedContracts.deps.json
+/Users/florian/M321-Zuckerer/src/ZuckererWarehouse/SharedContracts/bin/Debug/net8.0/SharedContracts.dll
+/Users/florian/M321-Zuckerer/src/ZuckererWarehouse/SharedContracts/bin/Debug/net8.0/SharedContracts.pdb
+/Users/florian/M321-Zuckerer/src/ZuckererWarehouse/SharedContracts/obj/Debug/net8.0/SharedContracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/florian/M321-Zuckerer/src/ZuckererWarehouse/SharedContracts/obj/Debug/net8.0/SharedContracts.AssemblyInfoInputs.cache
+/Users/florian/M321-Zuckerer/src/ZuckererWarehouse/SharedContracts/obj/Debug/net8.0/SharedContracts.AssemblyInfo.cs
+/Users/florian/M321-Zuckerer/src/ZuckererWarehouse/SharedContracts/obj/Debug/net8.0/SharedContracts.csproj.CoreCompileInputs.cache
+/Users/florian/M321-Zuckerer/src/ZuckererWarehouse/SharedContracts/obj/Debug/net8.0/SharedContracts.sourcelink.json
+/Users/florian/M321-Zuckerer/src/ZuckererWarehouse/SharedContracts/obj/Debug/net8.0/SharedContracts.dll
+/Users/florian/M321-Zuckerer/src/ZuckererWarehouse/SharedContracts/obj/Debug/net8.0/refint/SharedContracts.dll
+/Users/florian/M321-Zuckerer/src/ZuckererWarehouse/SharedContracts/obj/Debug/net8.0/SharedContracts.pdb
+/Users/florian/M321-Zuckerer/src/ZuckererWarehouse/SharedContracts/obj/Debug/net8.0/ref/SharedContracts.dll

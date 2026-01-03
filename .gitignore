@@ -1,8 +1,9 @@
 
-docker/MessageQueue/data/
-**/bin/
-**/obj/
-.DS_Store
 
+
+# macOS
 .DS_Store
 **/.DS_Store
+
+# RabbitMQ persistent data (generated)
+docker/MessageQueue/data/

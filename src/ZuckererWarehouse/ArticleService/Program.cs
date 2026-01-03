@@ -1,7 +1,11 @@
+using ArticleService.Messaging;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddSingleton<RabbitMqPublisher>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 
 // Health checks
 builder.Services.AddHealthChecks();
