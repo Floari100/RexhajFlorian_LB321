@@ -10,3 +10,14 @@ services:
       - ./ApiGateway/conf/99-apigateway.conf:/etc/nginx/conf.d/99-apigateway.conf:ro
     ports:
       - "8000:80"
+
+  MessageQueue:
+    image: rabbitmq:3-management-alpine
+    container_name: ZuckererMessageQueue
+    restart: always
+    volumes:
+      - ./MessageQueue/data:/var/lib/rabbitmq
+    ports:
+      - "8001:15672"
+      - "5672:5672"
+
